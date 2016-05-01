@@ -95,7 +95,7 @@ public class ApiTest {
 		final Response response = show_current_user.accept(ContentType.JSON).get(url);
 		
 		print_to(url, response);
-		Assert.assertEquals(response.statusCode(), 201, "Fucking shit is happened! ");
+		Assert.assertEquals(response.statusCode(), 200, "Fucking shit is happened! ");
 		
 		logger.log(LogStatus.PASS, "response is got");
 	}
