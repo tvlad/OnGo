@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.244 sec <<< FAILURE! - in TestSuite
+show_current_user(onGoByRestAssured.ApiTest)  Time elapsed: 0.159 sec  <<< FAILURE!
+java.lang.AssertionError: Fucking shit is happened!  expected [201] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at onGoByRestAssured.ApiTest.show_current_user(ApiTest.java:98)
+

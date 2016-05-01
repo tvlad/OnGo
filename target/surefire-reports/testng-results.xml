@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2476" started-at="2016-05-01T18:15:18Z" finished-at="2016-05-01T18:15:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2476" started-at="2016-05-01T18:15:18Z" finished-at="2016-05-01T18:15:21Z">
+      <class name="onGoByRestAssured.ApiTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="init" is-config="true" duration-ms="149" started-at="2016-05-01T21:15:18Z" finished-at="2016-05-01T21:15:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="login01()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="login01" duration-ms="1911" started-at="2016-05-01T21:15:18Z" finished-at="2016-05-01T21:15:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login01 -->
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="ifAllBad" is-config="true" duration-ms="211" started-at="2016-05-01T21:15:20Z" finished-at="2016-05-01T21:15:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login01 status=SUCCESS method=ApiTest.login01()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifAllBad -->
+        <test-method status="PASS" signature="show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="show_all_roles" duration-ms="130" started-at="2016-05-01T21:15:20Z" finished-at="2016-05-01T21:15:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- show_all_roles -->
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="ifAllBad" is-config="true" duration-ms="47" started-at="2016-05-01T21:15:21Z" finished-at="2016-05-01T21:15:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=show_all_roles status=SUCCESS method=ApiTest.show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifAllBad -->
+        <test-method status="FAIL" signature="show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="show_current_user" duration-ms="104" started-at="2016-05-01T21:15:21Z" finished-at="2016-05-01T21:15:21Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Fucking shit is happened!  expected [201] but found [200]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Fucking shit is happened!  expected [201] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at onGoByRestAssured.ApiTest.show_current_user(ApiTest.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- show_current_user -->
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="ifAllBad" is-config="true" duration-ms="62" started-at="2016-05-01T21:15:21Z" finished-at="2016-05-01T21:15:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=show_current_user status=FAILURE method=ApiTest.show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifAllBad -->
+      </class> <!-- onGoByRestAssured.ApiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

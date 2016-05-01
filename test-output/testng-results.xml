@@ -2,57 +2,57 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2729" started-at="2016-04-29T12:43:19Z" finished-at="2016-04-29T12:43:22Z">
+  <suite name="Default suite" duration-ms="2098" started-at="2016-05-01T18:11:52Z" finished-at="2016-05-01T18:11:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2729" started-at="2016-04-29T12:43:19Z" finished-at="2016-04-29T12:43:22Z">
+    <test name="Default test" duration-ms="2098" started-at="2016-05-01T18:11:52Z" finished-at="2016-05-01T18:11:55Z">
       <class name="onGoByRestAssured.ApiTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1]" name="init" is-config="true" duration-ms="163" started-at="2016-04-29T15:43:19Z" finished-at="2016-04-29T15:43:19Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2]" name="init" is-config="true" duration-ms="132" started-at="2016-05-01T21:11:52Z" finished-at="2016-05-01T21:11:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login01()[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1]" name="login01" duration-ms="2050" started-at="2016-04-29T15:43:19Z" finished-at="2016-04-29T15:43:21Z">
+        <test-method status="PASS" signature="login01()[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2]" name="login01" duration-ms="1572" started-at="2016-05-01T21:11:52Z" finished-at="2016-05-01T21:11:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login01 -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1]" name="ifAllBad" is-config="true" duration-ms="286" started-at="2016-04-29T15:43:21Z" finished-at="2016-04-29T15:43:22Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2]" name="ifAllBad" is-config="true" duration-ms="196" started-at="2016-05-01T21:11:54Z" finished-at="2016-05-01T21:11:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login01 status=SUCCESS method=ApiTest.login01()[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1] output={null}]]]>
+                <![CDATA[[TestResult name=login01 status=SUCCESS method=ApiTest.login01()[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifAllBad -->
-        <test-method status="PASS" signature="show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1]" name="show_all_roles" duration-ms="140" started-at="2016-04-29T15:43:22Z" finished-at="2016-04-29T15:43:22Z">
+        <test-method status="PASS" signature="show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2]" name="show_all_roles" duration-ms="133" started-at="2016-05-01T21:11:54Z" finished-at="2016-05-01T21:11:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- show_all_roles -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1]" name="ifAllBad" is-config="true" duration-ms="67" started-at="2016-04-29T15:43:22Z" finished-at="2016-04-29T15:43:22Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2]" name="ifAllBad" is-config="true" duration-ms="38" started-at="2016-05-01T21:11:54Z" finished-at="2016-05-01T21:11:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=show_all_roles status=SUCCESS method=ApiTest.show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1] output={null}]]]>
+                <![CDATA[[TestResult name=show_all_roles status=SUCCESS method=ApiTest.show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifAllBad -->
-        <test-method status="FAIL" signature="show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1]" name="show_current_user" duration-ms="110" started-at="2016-04-29T15:43:22Z" finished-at="2016-04-29T15:43:22Z">
+        <test-method status="FAIL" signature="show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2]" name="show_current_user" duration-ms="110" started-at="2016-05-01T21:11:54Z" finished-at="2016-05-01T21:11:55Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Fucking shit is happen!  expected [201] but found [200]]]>
+              <![CDATA[Fucking shit is happened!  expected [201] but found [200]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Fucking shit is happen!  expected [201] but found [200]
+              <![CDATA[java.lang.AssertionError: Fucking shit is happened!  expected [201] but found [200]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:372)
-	at onGoByRestAssured.ApiTest.show_current_user(ApiTest.java:100)
+	at onGoByRestAssured.ApiTest.show_current_user(ApiTest.java:98)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -83,11 +83,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- show_current_user -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1]" name="ifAllBad" is-config="true" duration-ms="64" started-at="2016-04-29T15:43:22Z" finished-at="2016-04-29T15:43:22Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2]" name="ifAllBad" is-config="true" duration-ms="37" started-at="2016-05-01T21:11:55Z" finished-at="2016-05-01T21:11:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=show_current_user status=FAILURE method=ApiTest.show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@58ceff1] output={null}]]]>
+                <![CDATA[[TestResult name=show_current_user status=FAILURE method=ApiTest.show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@2752f6e2] output={null}]]]>
               </value>
             </param>
           </params>
