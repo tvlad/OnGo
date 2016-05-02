@@ -31,29 +31,69 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">2,5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">3,6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">onGoByRestAssured.ApiTest</td><td><a href="#m1"><b>show_current_user</b>  </a></td><td class="numi">1</td><td>1462126521054</td><td class="numi">104</td></tr>
+<tr class="failedodd"><td rowspan="1">onGoByRestAssured.ApiTest</td><td><a href="#m1"><b>show_Guide_Braintree_Customer</b>  </a></td><td class="numi">1</td><td>1462227415268</td><td class="numi">1398</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">onGoByRestAssured.ApiTest</td><td><a href="#m2"><b>login01</b>  </a></td><td class="numi">1</td><td>1462126518754</td><td class="numi">1911</td></tr><tr class="passedodd"><td><a href="#m3"><b>show_all_roles</b>  </a></td><td class="numi">1</td><td>1462126520876</td><td class="numi">130</td></tr>
+<tr class="passedodd"><td rowspan="3">onGoByRestAssured.ApiTest</td><td><a href="#m2"><b>login01</b>  </a></td><td class="numi">1</td><td>1462227413411</td><td class="numi">1664</td></tr><tr class="passedodd"><td><a href="#m3"><b>show_all_roles</b>  </a></td><td class="numi">1</td><td>1462227416710</td><td class="numi">129</td></tr><tr class="passedodd"><td><a href="#m4"><b>show_current_user</b>  </a></td><td class="numi">1</td><td>1462227416884</td><td class="numi">104</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">onGoByRestAssured.ApiTest:show_current_user</h2>
+<h2 id="m1">onGoByRestAssured.ApiTest:show_Guide_Braintree_Customer</h2>
 <div style="padding-left:3em">
-<p>Fucking shit is happened!  expected [201] but found [200]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertEquals(Assert.java:123)
-<br/>at org.testng.Assert.assertEquals(Assert.java:370)
-<br/>at onGoByRestAssured.ApiTest.show_current_user(ApiTest.java:98)
+<p>1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties ([&quot;name&quot;,&quot;price&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;&quot;}
+    instance: {&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;id&quot;,&quot;name&quot;,&quot;price&quot;]
+    missing: [&quot;name&quot;,&quot;price&quot;]
+
+  Actual: {&quot;id&quot;:&quot;21349590&quot;,&quot;first_name&quot;:&quot;Tvlad&quot;,&quot;last_name&quot;:&quot;Test&quot;,&quot;company&quot;:&quot;LETZGRO&quot;,&quot;email&quot;:&quot;test@letzgro.com&quot;,&quot;phone&quot;:&quot;312.555.1234&quot;,&quot;fax&quot;:&quot;614.555.5678&quot;,&quot;website&quot;:&quot;www.example.com&quot;,&quot;created_at&quot;:&quot;2016-04-12T15:49:48.000Z&quot;,&quot;updated_at&quot;:&quot;2016-04-12T15:49:48.000Z&quot;,&quot;credit_cards&quot;:[],&quot;default_credit_card&quot;:null}
+</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+<br/>at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+<br/>at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+<br/>at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+<br/>at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+<br/>at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+<br/>at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:92)
+<br/>at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:174)
+<br/>at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:230)
+<br/>at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:258)
+<br/>at onGoByRestAssured.ApiTest.show_Guide_Braintree_Customer(ApiTest.java:149)
 <br/>28 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">onGoByRestAssured.ApiTest:login01</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">onGoByRestAssured.ApiTest:show_all_roles</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">onGoByRestAssured.ApiTest:show_current_user</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

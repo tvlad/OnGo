@@ -7,7 +7,7 @@
         <methods>
           <include name="init"/>
           <include name="ifAllBad"/>
-          <include name="show_current_user"/>
+          <include name="show_Guide_Braintree_Customer"/>
         </methods>
       </class> <!-- onGoByRestAssured.ApiTest -->
     </classes>

@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>D:\MyDoc\Java-test\onGo\testng-customsuite.xml</span>
+                    <span>C:\Windows\Temp\testng-eclipse-535664651\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="onGoByRestAssured.ApiTest" hash-for-method="show_current_user">show_current_user</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="onGoByRestAssured.ApiTest" hash-for-method="show_Guide_Braintree_Customer">show_Guide_Braintree_Customer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,6 +121,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="onGoByRestAssured.ApiTest" hash-for-method="show_all_roles">show_all_roles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="onGoByRestAssured.ApiTest" hash-for-method="show_current_user">show_current_user</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -143,15 +148,53 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="show_current_user">
-                  </a> <!-- show_current_user -->
-                  <span class="method-name">show_current_user</span>
-                  <div class="stack-trace">java.lang.AssertionError: Fucking shit is happened!  expected [201] but found [200]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:372)
-	at onGoByRestAssured.ApiTest.show_current_user(ApiTest.java:98)
+                  <a name="show_Guide_Braintree_Customer">
+                  </a> <!-- show_Guide_Braintree_Customer -->
+                  <span class="method-name">show_Guide_Braintree_Customer</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties ([&quot;name&quot;,&quot;price&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;&quot;}
+    instance: {&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;id&quot;,&quot;name&quot;,&quot;price&quot;]
+    missing: [&quot;name&quot;,&quot;price&quot;]
+
+  Actual: {&quot;id&quot;:&quot;21349590&quot;,&quot;first_name&quot;:&quot;Tvlad&quot;,&quot;last_name&quot;:&quot;Test&quot;,&quot;company&quot;:&quot;LETZGRO&quot;,&quot;email&quot;:&quot;test@letzgro.com&quot;,&quot;phone&quot;:&quot;312.555.1234&quot;,&quot;fax&quot;:&quot;614.555.5678&quot;,&quot;website&quot;:&quot;www.example.com&quot;,&quot;created_at&quot;:&quot;2016-04-12T15:49:48.000Z&quot;,&quot;updated_at&quot;:&quot;2016-04-12T15:49:48.000Z&quot;,&quot;credit_cards&quot;:[],&quot;default_credit_card&quot;:null}
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:92)
+	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:174)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:230)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:258)
+	at onGoByRestAssured.ApiTest.show_Guide_Braintree_Customer(ApiTest.java:149)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -202,12 +245,19 @@
                   <span class="method-name">show_all_roles</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="show_current_user">
+                  </a> <!-- show_current_user -->
+                  <span class="method-name">show_current_user</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\MyDoc\Java-test\onGo\testng-customsuite.xml</span>
+            <span class="header-content">C:\Windows\Temp\testng-eclipse-535664651\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -256,24 +306,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login01')
 data.setCell(0, 2, 'onGoByRestAssured.ApiTest')
-data.setCell(0, 3, 1572);
+data.setCell(0, 3, 1593);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'show_all_roles')
+data.setCell(1, 1, 'show_Guide_Braintree_Customer')
 data.setCell(1, 2, 'onGoByRestAssured.ApiTest')
-data.setCell(1, 3, 133);
+data.setCell(1, 3, 1360);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'show_current_user')
 data.setCell(2, 2, 'onGoByRestAssured.ApiTest')
-data.setCell(2, 3, 110);
+data.setCell(2, 3, 102);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'show_all_roles')
+data.setCell(3, 2, 'onGoByRestAssured.ApiTest')
+data.setCell(3, 3, 98);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -306,29 +360,37 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">login01</span>
-                <span class="method-start">141 ms</span>
+                <span class="method-start">122 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">ifAllBad([TestResult name=login01 status=SUCCESS method=ApiTest.login01()[pri:0, instance:onGoByRestAssured.A...)</span>
-                <span class="method-start">1714 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">show_all_roles</span>
-                <span class="method-start">1910 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">ifAllBad([TestResult name=show_all_roles status=SUCCESS method=ApiTest.show_all_roles()[pri:0, instance:onGoB...)</span>
-                <span class="method-start">2043 ms</span>
+                <span class="method-start">1716 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">show_current_user</span>
-                <span class="method-start">2082 ms</span>
+                <span class="method-name">show_Guide_Braintree_Customer</span>
+                <span class="method-start">1923 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">ifAllBad([TestResult name=show_current_user status=FAILURE method=ApiTest.show_current_user()[pri:0, instance...)</span>
-                <span class="method-start">2193 ms</span>
+                <span class="method-name">ifAllBad([TestResult name=show_Guide_Braintree_Customer status=FAILURE method=ApiTest.show_Guide_Braintree_Cu...)</span>
+                <span class="method-start">3285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">show_all_roles</span>
+                <span class="method-start">3328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ifAllBad([TestResult name=show_all_roles status=SUCCESS method=ApiTest.show_all_roles()[pri:0, instance:onGoB...)</span>
+                <span class="method-start">3426 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">show_current_user</span>
+                <span class="method-start">3465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ifAllBad([TestResult name=show_current_user status=SUCCESS method=ApiTest.show_current_user()[pri:0, instance...)</span>
+                <span class="method-start">3568 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

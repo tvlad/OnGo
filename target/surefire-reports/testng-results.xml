@@ -1,62 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2476" started-at="2016-05-01T18:15:18Z" finished-at="2016-05-01T18:15:21Z">
+  <suite name="Default suite" duration-ms="3649" started-at="2016-05-02T22:16:53Z" finished-at="2016-05-02T22:16:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2476" started-at="2016-05-01T18:15:18Z" finished-at="2016-05-01T18:15:21Z">
+    <test name="Default test" duration-ms="3649" started-at="2016-05-02T22:16:53Z" finished-at="2016-05-02T22:16:57Z">
       <class name="onGoByRestAssured.ApiTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="init" is-config="true" duration-ms="149" started-at="2016-05-01T21:15:18Z" finished-at="2016-05-01T21:15:18Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="init" is-config="true" duration-ms="118" started-at="2016-05-03T01:16:53Z" finished-at="2016-05-03T01:16:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login01()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="login01" duration-ms="1911" started-at="2016-05-01T21:15:18Z" finished-at="2016-05-01T21:15:20Z">
+        <test-method status="PASS" signature="login01()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="login01" duration-ms="1664" started-at="2016-05-03T01:16:53Z" finished-at="2016-05-03T01:16:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login01 -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="ifAllBad" is-config="true" duration-ms="211" started-at="2016-05-01T21:15:20Z" finished-at="2016-05-01T21:15:20Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="ifAllBad" is-config="true" duration-ms="193" started-at="2016-05-03T01:16:55Z" finished-at="2016-05-03T01:16:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login01 status=SUCCESS method=ApiTest.login01()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a] output={null}]]]>
+                <![CDATA[[TestResult name=login01 status=SUCCESS method=ApiTest.login01()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifAllBad -->
-        <test-method status="PASS" signature="show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="show_all_roles" duration-ms="130" started-at="2016-05-01T21:15:20Z" finished-at="2016-05-01T21:15:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- show_all_roles -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="ifAllBad" is-config="true" duration-ms="47" started-at="2016-05-01T21:15:21Z" finished-at="2016-05-01T21:15:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=show_all_roles status=SUCCESS method=ApiTest.show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ifAllBad -->
-        <test-method status="FAIL" signature="show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="show_current_user" duration-ms="104" started-at="2016-05-01T21:15:21Z" finished-at="2016-05-01T21:15:21Z">
+        <test-method status="FAIL" signature="show_Guide_Braintree_Customer()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="show_Guide_Braintree_Customer" duration-ms="1398" started-at="2016-05-03T01:16:55Z" finished-at="2016-05-03T01:16:56Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Fucking shit is happened!  expected [201] but found [200]]]>
+              <![CDATA[1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["name","price"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["id","name","price"]
+    missing: ["name","price"]
+
+  Actual: {"id":"21349590","first_name":"Tvlad","last_name":"Test","company":"LETZGRO","email":"test@letzgro.com","phone":"312.555.1234","fax":"614.555.5678","website":"www.example.com","created_at":"2016-04-12T15:49:48.000Z","updated_at":"2016-04-12T15:49:48.000Z","credit_cards":[],"default_credit_card":null}
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Fucking shit is happened!  expected [201] but found [200]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:370)
-	at onGoByRestAssured.ApiTest.show_current_user(ApiTest.java:98)
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["name","price"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["id","name","price"]
+    missing: ["name","price"]
+
+  Actual: {"id":"21349590","first_name":"Tvlad","last_name":"Test","company":"LETZGRO","email":"test@letzgro.com","phone":"312.555.1234","fax":"614.555.5678","website":"www.example.com","created_at":"2016-04-12T15:49:48.000Z","updated_at":"2016-04-12T15:49:48.000Z","credit_cards":[],"default_credit_card":null}
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:92)
+	at com.jayway.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:174)
+	at com.jayway.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:230)
+	at com.jayway.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:258)
+	at onGoByRestAssured.ApiTest.show_Guide_Braintree_Customer(ApiTest.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
@@ -85,12 +121,42 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- show_current_user -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a]" name="ifAllBad" is-config="true" duration-ms="62" started-at="2016-05-01T21:15:21Z" finished-at="2016-05-01T21:15:21Z">
+        </test-method> <!-- show_Guide_Braintree_Customer -->
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="ifAllBad" is-config="true" duration-ms="41" started-at="2016-05-03T01:16:56Z" finished-at="2016-05-03T01:16:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=show_current_user status=FAILURE method=ApiTest.show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@19dfb72a] output={null}]]]>
+                <![CDATA[[TestResult name=show_Guide_Braintree_Customer status=FAILURE method=ApiTest.show_Guide_Braintree_Customer()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifAllBad -->
+        <test-method status="PASS" signature="show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="show_all_roles" duration-ms="129" started-at="2016-05-03T01:16:56Z" finished-at="2016-05-03T01:16:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- show_all_roles -->
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="ifAllBad" is-config="true" duration-ms="45" started-at="2016-05-03T01:16:56Z" finished-at="2016-05-03T01:16:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=show_all_roles status=SUCCESS method=ApiTest.show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ifAllBad -->
+        <test-method status="PASS" signature="show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="show_current_user" duration-ms="104" started-at="2016-05-03T01:16:56Z" finished-at="2016-05-03T01:16:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- show_current_user -->
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792]" name="ifAllBad" is-config="true" duration-ms="62" started-at="2016-05-03T01:16:56Z" finished-at="2016-05-03T01:16:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=show_current_user status=SUCCESS method=ApiTest.show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@2d6e8792] output={null}]]]>
               </value>
             </param>
           </params>
