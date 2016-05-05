@@ -15,6 +15,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -130,7 +132,7 @@ public class ApiTest {
 //			  
 //			}
 		
-		response.then().assertThat().body(com.jayway.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(schema));
+		response.then().assertThat().body(matchesJsonSchema(schema));
 				
 		Assert.assertEquals(response.statusCode(), 200, "Fucking shit is happened! ");
 				
