@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3704" started-at="2016-05-05T14:05:03Z" finished-at="2016-05-05T14:05:06Z">
+  <suite name="Default suite" duration-ms="3879" started-at="2016-05-05T14:58:54Z" finished-at="2016-05-05T14:58:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3704" started-at="2016-05-05T14:05:03Z" finished-at="2016-05-05T14:05:06Z">
+    <test name="Default test" duration-ms="3879" started-at="2016-05-05T14:58:54Z" finished-at="2016-05-05T14:58:58Z">
       <class name="onGoByRestAssured.ApiTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="init" is-config="true" duration-ms="133" started-at="2016-05-05T17:05:03Z" finished-at="2016-05-05T17:05:03Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="init" is-config="true" duration-ms="130" started-at="2016-05-05T17:58:54Z" finished-at="2016-05-05T17:58:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login01()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="login01" duration-ms="1683" started-at="2016-05-05T17:05:03Z" finished-at="2016-05-05T17:05:04Z">
+        <test-method status="PASS" signature="login01()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="login01" duration-ms="1838" started-at="2016-05-05T17:58:54Z" finished-at="2016-05-05T17:58:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login01 -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="230" started-at="2016-05-05T17:05:04Z" finished-at="2016-05-05T17:05:05Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="227" started-at="2016-05-05T17:58:56Z" finished-at="2016-05-05T17:58:56Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifAllBad -->
-        <test-method status="PASS" signature="show_Guide_Braintree_Customer()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="show_Guide_Braintree_Customer" duration-ms="1437" started-at="2016-05-05T17:05:05Z" finished-at="2016-05-05T17:05:06Z">
+        <test-method status="PASS" signature="show_Guide_Braintree_Customer()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="show_Guide_Braintree_Customer" duration-ms="1421" started-at="2016-05-05T17:58:56Z" finished-at="2016-05-05T17:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- show_Guide_Braintree_Customer -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="43" started-at="2016-05-05T17:05:06Z" finished-at="2016-05-05T17:05:06Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="49" started-at="2016-05-05T17:58:58Z" finished-at="2016-05-05T17:58:58Z">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifAllBad -->
-        <test-method status="PASS" signature="show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="show_all_roles" duration-ms="104" started-at="2016-05-05T17:05:06Z" finished-at="2016-05-05T17:05:06Z">
+        <test-method status="PASS" signature="show_all_roles()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="show_all_roles" duration-ms="123" started-at="2016-05-05T17:58:58Z" finished-at="2016-05-05T17:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- show_all_roles -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="40" started-at="2016-05-05T17:05:06Z" finished-at="2016-05-05T17:05:06Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="49" started-at="2016-05-05T17:58:58Z" finished-at="2016-05-05T17:58:58Z">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ifAllBad -->
-        <test-method status="PASS" signature="show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="show_current_user" duration-ms="115" started-at="2016-05-05T17:05:06Z" finished-at="2016-05-05T17:05:06Z">
+        <test-method status="PASS" signature="show_current_user()[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="show_current_user" duration-ms="113" started-at="2016-05-05T17:58:58Z" finished-at="2016-05-05T17:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- show_current_user -->
-        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="40" started-at="2016-05-05T17:05:06Z" finished-at="2016-05-05T17:05:06Z">
+        <test-method status="PASS" signature="ifAllBad(org.testng.ITestResult)[pri:0, instance:onGoByRestAssured.ApiTest@17c68925]" name="ifAllBad" is-config="true" duration-ms="47" started-at="2016-05-05T17:58:58Z" finished-at="2016-05-05T17:58:58Z">
           <params>
             <param index="0">
               <value>
