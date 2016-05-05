@@ -15,16 +15,12 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
-import static com.jayway.restassured.RestAssured.*;
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 
-import static com.jayway.restassured.RestAssured.*;
-import static com.jayway.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
-
-
+import java.io.IOException;
 import java.io.InputStream;
+
+
 
 
 
@@ -114,45 +110,63 @@ public class ApiTest {
 	}
 	
 	@Test 
-	public void show_Guide_Braintree_Customer(){
+	public void show_Guide_Braintree_Customer() throws IOException{
 		String url = uri + "/users/me/customer";
 		
 		logger = report.startTest(currentMethodName(2));
 		
-//		final RequestSpecification show_Guide_Braintree_Customer = RestAssured.given()
-//				.contentType(ContentType.JSON)
-//				.header("Access-Token", getAccess_token());
-//		final Response response = show_Guide_Braintree_Customer.accept(ContentType.JSON).get(url);
-//		
-//		print_to(url, response);
-//		Assert.assertEquals(response.statusCode(), 200, "Fucking shit is happened! ");
-//		
-//		InputStream schema = Thread.currentThread().getContextClassLoader()
-//				.getResourceAsStream("show_Guide_Braintree_Customer.json");
-//		
-//		System.out.println("asdasd - " + schema);
+		final RequestSpecification show_Guide_Braintree_Customer = RestAssured.given()
+				.contentType(ContentType.JSON)
+				.header("Access-Token", getAccess_token());
+		final Response response = show_Guide_Braintree_Customer.accept(ContentType.JSON).get(url);
+		
+		print_to(url, response);
+		
+		InputStream schema = Thread.currentThread().getContextClassLoader()
+				.getResourceAsStream("show_Guide_Braintree_Customer.json");
+		
+//		BufferedReader in = new BufferedReader(new InputStreamReader(schema));
+//		String line = null;
+//		while((line = in.readLine()) != null) {
+//			  System.out.println(line);
+//			  
+//			}
+		
+		response.then().assertThat().body(matchesJsonSchema(schema));
+				
+		Assert.assertEquals(response.statusCode(), 200, "Fucking shit is happened! ");
+				
+		logger.log(LogStatus.PASS, "response is got");
 
 		
-		logger.log(LogStatus.PASS, "response is got");
-		
-				
-		given()
-			.contentType(ContentType.JSON)
-			.header("Access-Token", getAccess_token())
-		.log().all().response()
-		.when()
-			.get(url)
-		.then()
-			.statusCode(200)
-			.and()
-			.assertThat()
-			.body(matchesJsonSchema("{\"required\": [\"id\", \"name\", \"price\"]}"));
+
 		
 	}
 	
+//	private Schema fis() throws IOException{
+//		
+//		 InputStream is = null;
+//
+//		    try {
+//		        is = new FileInputStream("./Jsons/show_Guide_Braintree_Customer.json");
+//		        System.out.println("inputStream - " + is.read());
+//		         
+//		    } catch (FileNotFoundException e) {
+//		        
+//		        e.printStackTrace();
+//		    } catch (IOException e) {
+//		        
+//		        e.printStackTrace();
+//		    }
+//		    JSONObject rawSchema = new JSONObject(new JSONTokener(is));
+//			Schema schema = SchemaLoader.load(rawSchema);
+//			is.close();
+//		    return schema;
+//	}
 	
 	
 	
+
 	@AfterMethod
 	public void ifAllBad(ITestResult result){
 		if(result.getStatus()==ITestResult.FAILURE){
