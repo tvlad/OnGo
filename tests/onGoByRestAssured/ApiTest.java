@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.jayway.restassured.RestAssured;
+
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
@@ -17,8 +18,10 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 
 
 
@@ -122,8 +125,8 @@ public class ApiTest {
 		
 		print_to(url, response);
 		
-		InputStream schema = Thread.currentThread().getContextClassLoader()
-				.getResourceAsStream("show_Guide_Braintree_Customer.json");
+//		InputStream schema = Thread.currentThread().getContextClassLoader()
+//				.getResourceAsStream("show_Guide_Braintree_Customer.json");
 		
 //		BufferedReader in = new BufferedReader(new InputStreamReader(schema));
 //		String line = null;
@@ -132,7 +135,7 @@ public class ApiTest {
 //			  
 //			}
 		
-		response.then().assertThat().body(matchesJsonSchema(schema));
+		response.then().assertThat().body(matchesJsonSchemaInClasspath("show_Guide_Braintree_Customer.json"));
 				
 		Assert.assertEquals(response.statusCode(), 200, "Fucking shit is happened! ");
 				
